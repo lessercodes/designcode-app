@@ -1,21 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = () => (
-  <Container>
-    <Cover>
-      <Image source={require('../assets/background2.jpg')} />
-      <Title>Styled Components</Title>
-    </Cover>
-    <Content>
-      <Logo source={require('../assets/logo-react.png')} />
-      <Wrapper>
-        <Caption>React Native</Caption>
-        <Subtitle>5 of 12 sections</Subtitle>
-      </Wrapper>
-    </Content>
-  </Container>
-);
+interface Props {
+  title: string;
+  caption: string;
+  subtitle: string;
+  image: any;
+  logo: any;
+}
+
+const Card = (props: Props) => {
+  console.log(props);
+  return (
+    < Container >
+      <Cover>
+        <Image source={props.image} />
+        <Title>{props.title}</Title>
+      </Cover>
+      <Content>
+        <Logo source={props.logo} />
+        <Wrapper>
+          <Caption>{props.caption}</Caption>
+          <Subtitle>{props.subtitle}</Subtitle>
+        </Wrapper>
+      </Content>
+    </Container >
+  )
+};
 
 export default Card;
 
