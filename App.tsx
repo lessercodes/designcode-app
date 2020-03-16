@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollView, SafeAreaView } from 'react-native';
 import styled from 'styled-components';
 
+import Menu from './components/Menu';
 import Card from './components/Card';
 import Logo from './components/Logo';
 import Course from './components/Course';
@@ -10,6 +11,7 @@ import { NotificationIcon } from './components/Icons';
 export default function App() {
   return (
     <Container>
+      <Menu />
       <SafeAreaView style={{ flex: 1 }}>
         <ScrollView >
           <TitleBar>
