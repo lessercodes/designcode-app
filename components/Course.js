@@ -1,17 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-interface Props {
-  image: any;
-  logo: any;
-  subtitle: string;
-  title: string;
-  avatar: any;
-  caption: string;
-  author: string;
-}
-
-const Course = (props: Props) => {
+const Course = props => {
   return (
     <Container>
       <Cover>
@@ -27,7 +17,7 @@ const Course = (props: Props) => {
       </Content>
     </Container>
   );
-}
+};
 
 export default Course;
 

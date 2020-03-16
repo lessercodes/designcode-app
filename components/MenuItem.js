@@ -1,14 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Ionicons } from '@expo/vector-icons';
+import React from "react";
+import styled from "styled-components";
+import { Ionicons } from "@expo/vector-icons";
 
-interface Props {
-  icon: any;
-  title: string;
-  text: string;
-}
-
-const MenuItem = (props: Props) => {
+const MenuItem = props => {
   return (
     <Container>
       <IconView>
@@ -20,7 +14,7 @@ const MenuItem = (props: Props) => {
       </Content>
     </Container>
   );
-}
+};
 
 export default MenuItem;
 

@@ -1,18 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-interface Props {
-  title: string;
-  caption: string;
-  subtitle: string;
-  image: any;
-  logo: any;
-}
-
-const Card = (props: Props) => {
-  console.log(props);
+const Card = props => {
   return (
-    < Container >
+    <Container>
       <Cover>
         <Image source={props.image} />
         <Title>{props.title}</Title>
@@ -24,8 +15,8 @@ const Card = (props: Props) => {
           <Subtitle>{props.subtitle}</Subtitle>
         </Wrapper>
       </Content>
-    </Container >
-  )
+    </Container>
+  );
 };
 
 export default Card;

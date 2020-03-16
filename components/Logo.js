@@ -1,12 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-interface Props {
-  image: any;
-  text: string;
-}
-
-const Logo = (props: Props) => {
+const Logo = props => {
   return (
     <Container>
       <Image source={props.image} resizeMode="contain" />
